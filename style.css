@@ -1,13 +1,50 @@
 body{
     margin: 0%;
+    /* background-image: url(bokuprincipal.jpg); */
+    background: springgreen;s
+    
 }
-img{
-    width: 300px;
-    transition: 1s;
+.boku{
+    width: 800px;
+
+     /* transition: 1s; */
+    animation: mover;
+    animation-duration: 15s;
+     /* animation-fill-mode: forwards; */
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    display: flex;
+    
+    
 }
-img:hover{
+ /* img:hover{
     filter: grayscale(50%); 
     box-shadow: 0px 0px 30px red;
     transform: rotate(360deg) scale(1);
 
+} */
+  @keyframes mover {
+        0%{
+            transform: translateX(0) translateY(0);
+        }
+        20%{
+            transform: translateX(200px) translateY(0);
+        }
+        40%{
+            transform: translateX(200px) translateY(1000px);
+        }
+        80%{
+            transform: translateX(0) translateY(1000px);
+        }
+        100%{
+            transform: rotate(180deg);
+        }
+} 
+
+.titulo {
+    font-size: xx-large;
+    background-color: sienna;
+    height: 100%;
+    width:100%;
 }
+
